@@ -1,0 +1,18 @@
+[24-Sep-2020 15:13:43] NOTICE: fpm is running, pid 22925
+[24-Sep-2020 15:13:43] NOTICE: ready to handle connections
+[24-Sep-2020 15:33:17] ERROR: Another FPM instance seems to already listen on /home/mieone/.config/Local/run/HR04GOaYN/php/php-fpm.socket
+[24-Sep-2020 15:33:17] ERROR: FPM initialization failed
+[24-Sep-2020 15:33:18] ERROR: Another FPM instance seems to already listen on /home/mieone/.config/Local/run/HR04GOaYN/php/php-fpm.socket
+[24-Sep-2020 15:33:18] ERROR: FPM initialization failed
+[24-Sep-2020 15:33:18] ERROR: Another FPM instance seems to already listen on /home/mieone/.config/Local/run/HR04GOaYN/php/php-fpm.socket
+[24-Sep-2020 15:33:18] ERROR: FPM initialization failed
+[24-Sep-2020 15:33:19] ERROR: Another FPM instance seems to already listen on /home/mieone/.config/Local/run/HR04GOaYN/php/php-fpm.socket
+[24-Sep-2020 15:33:19] ERROR: FPM initialization failed
+[24-Sep-2020 16:35:27] ERROR: Another FPM instance seems to already listen on /home/mieone/.config/Local/run/HR04GOaYN/php/php-fpm.socket
+[24-Sep-2020 16:35:27] ERROR: FPM initialization failed
+[24-Sep-2020 16:35:28] ERROR: Another FPM instance seems to already listen on /home/mieone/.config/Local/run/HR04GOaYN/php/php-fpm.socket
+[24-Sep-2020 16:35:28] ERROR: FPM initialization failed
+[24-Sep-2020 16:35:29] ERROR: Another FPM instance seems to already listen on /home/mieone/.config/Local/run/HR04GOaYN/php/php-fpm.socket
+[24-Sep-2020 16:35:29] ERROR: FPM initialization failed
+[24-Sep-2020 16:35:29] ERROR: Another FPM instance seems to already listen on /home/mieone/.config/Local/run/HR04GOaYN/php/php-fpm.socket
+[24-Sep-2020 16:35:29] ERROR: FPM initialization failed

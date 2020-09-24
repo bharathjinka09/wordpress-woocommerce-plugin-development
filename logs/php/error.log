@@ -1,0 +1,407 @@
+[24-Sep-2020 10:05:28 UTC] PHP Catchable fatal error:  Object of class stdClass could not be converted to string in /home/mieone/Downloads/wordpress/app/public/wp-content/mu-plugins/local-by-flywheel-live-link-helper.php on line 154
+[24-Sep-2020 10:05:28 UTC] PHP Stack trace:
+[24-Sep-2020 10:05:28 UTC] PHP   1. {main}() /home/mieone/Downloads/wordpress/app/public/wp-admin/index.php:0
+[24-Sep-2020 10:05:28 UTC] PHP   2. require_once() /home/mieone/Downloads/wordpress/app/public/wp-admin/index.php:10
+[24-Sep-2020 10:05:28 UTC] PHP   3. do_action() /home/mieone/Downloads/wordpress/app/public/wp-admin/admin.php:175
+[24-Sep-2020 10:05:28 UTC] PHP   4. WP_Hook->do_action() /home/mieone/Downloads/wordpress/app/public/wp-includes/plugin.php:478
+[24-Sep-2020 10:05:28 UTC] PHP   5. WP_Hook->apply_filters() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-hook.php:311
+[24-Sep-2020 10:05:28 UTC] PHP   6. _maybe_update_plugins() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-hook.php:287
+[24-Sep-2020 10:05:28 UTC] PHP   7. wp_update_plugins() /home/mieone/Downloads/wordpress/app/public/wp-includes/update.php:813
+[24-Sep-2020 10:05:28 UTC] PHP   8. set_site_transient() /home/mieone/Downloads/wordpress/app/public/wp-includes/update.php:445
+[24-Sep-2020 10:05:28 UTC] PHP   9. update_site_option() /home/mieone/Downloads/wordpress/app/public/wp-includes/option.php:1962
+[24-Sep-2020 10:05:28 UTC] PHP  10. update_network_option() /home/mieone/Downloads/wordpress/app/public/wp-includes/option.php:1294
+[24-Sep-2020 10:05:28 UTC] PHP  11. update_option() /home/mieone/Downloads/wordpress/app/public/wp-includes/option.php:1724
+[24-Sep-2020 10:05:28 UTC] PHP  12. apply_filters() /home/mieone/Downloads/wordpress/app/public/wp-includes/option.php:394
+[24-Sep-2020 10:05:28 UTC] PHP  13. WP_Hook->apply_filters() /home/mieone/Downloads/wordpress/app/public/wp-includes/plugin.php:206
+[24-Sep-2020 10:05:28 UTC] PHP  14. LocalWP_Live_Link_Helper->make_link_local() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-hook.php:289
+[24-Sep-2020 10:05:28 UTC] PHP  15. LocalWP_Live_Link_Helper->replace_host() /home/mieone/Downloads/wordpress/app/public/wp-content/mu-plugins/local-by-flywheel-live-link-helper.php:186
+[24-Sep-2020 10:05:28 UTC] PHP  16. str_replace() /home/mieone/Downloads/wordpress/app/public/wp-content/mu-plugins/local-by-flywheel-live-link-helper.php:154
+[24-Sep-2020 10:06:46 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method LocalWP_Live_Link_Helper::replace_host() in /home/mieone/Downloads/wordpress/app/public/wp-content/mu-plugins/local-by-flywheel-live-link-helper.php:172
+Stack trace:
+#0 /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-hook.php(289): LocalWP_Live_Link_Helper->make_link_tunnel('http://localhos...')
+#1 /home/mieone/Downloads/wordpress/app/public/wp-includes/plugin.php(206): WP_Hook->apply_filters('http://localhos...', Array)
+#2 /home/mieone/Downloads/wordpress/app/public/wp-includes/option.php(178): apply_filters('option_siteurl', 'http://localhos...', 'siteurl')
+#3 /home/mieone/Downloads/wordpress/app/public/wp-includes/option.php(1380): get_option('siteurl', false)
+#4 /home/mieone/Downloads/wordpress/app/public/wp-includes/option.php(1245): get_network_option(1, 'siteurl', false)
+#5 /home/mieone/Downloads/wordpress/app/public/wp-includes/default-constants.php(230): get_site_option('siteurl')
+#6 /home/mieone/Downloads/wordpress/app/public/wp-settings.php( in /home/mieone/Downloads/wordpress/app/public/wp-content/mu-plugins/local-by-flywheel-live-link-helper.php on line 172
+[24-Sep-2020 10:07:02 UTC] PHP Catchable fatal error:  Object of class stdClass could not be converted to string in /home/mieone/Downloads/wordpress/app/public/wp-content/mu-plugins/local-by-flywheel-live-link-helper.php on line 154
+[24-Sep-2020 10:07:02 UTC] PHP Stack trace:
+[24-Sep-2020 10:07:02 UTC] PHP   1. {main}() /home/mieone/Downloads/wordpress/app/public/wp-admin/index.php:0
+[24-Sep-2020 10:07:02 UTC] PHP   2. require_once() /home/mieone/Downloads/wordpress/app/public/wp-admin/index.php:10
+[24-Sep-2020 10:07:02 UTC] PHP   3. do_action() /home/mieone/Downloads/wordpress/app/public/wp-admin/admin.php:175
+[24-Sep-2020 10:07:02 UTC] PHP   4. WP_Hook->do_action() /home/mieone/Downloads/wordpress/app/public/wp-includes/plugin.php:478
+[24-Sep-2020 10:07:02 UTC] PHP   5. WP_Hook->apply_filters() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-hook.php:311
+[24-Sep-2020 10:07:02 UTC] PHP   6. _maybe_update_themes() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-hook.php:287
+[24-Sep-2020 10:07:02 UTC] PHP   7. wp_update_themes() /home/mieone/Downloads/wordpress/app/public/wp-includes/update.php:834
+[24-Sep-2020 10:07:02 UTC] PHP   8. set_site_transient() /home/mieone/Downloads/wordpress/app/public/wp-includes/update.php:628
+[24-Sep-2020 10:07:02 UTC] PHP   9. update_site_option() /home/mieone/Downloads/wordpress/app/public/wp-includes/option.php:1962
+[24-Sep-2020 10:07:02 UTC] PHP  10. update_network_option() /home/mieone/Downloads/wordpress/app/public/wp-includes/option.php:1294
+[24-Sep-2020 10:07:02 UTC] PHP  11. update_option() /home/mieone/Downloads/wordpress/app/public/wp-includes/option.php:1724
+[24-Sep-2020 10:07:02 UTC] PHP  12. apply_filters() /home/mieone/Downloads/wordpress/app/public/wp-includes/option.php:394
+[24-Sep-2020 10:07:02 UTC] PHP  13. WP_Hook->apply_filters() /home/mieone/Downloads/wordpress/app/public/wp-includes/plugin.php:206
+[24-Sep-2020 10:07:02 UTC] PHP  14. LocalWP_Live_Link_Helper->make_link_local() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-hook.php:289
+[24-Sep-2020 10:07:02 UTC] PHP  15. LocalWP_Live_Link_Helper->replace_host() /home/mieone/Downloads/wordpress/app/public/wp-content/mu-plugins/local-by-flywheel-live-link-helper.php:186
+[24-Sep-2020 10:07:02 UTC] PHP  16. str_replace() /home/mieone/Downloads/wordpress/app/public/wp-content/mu-plugins/local-by-flywheel-live-link-helper.php:154
+[24-Sep-2020 10:07:24 UTC] PHP Warning:  Attempt to assign property 'post_content' of non-object in /home/mieone/Downloads/wordpress/app/public/wp-content/mu-plugins/local-by-flywheel-live-link-helper.php on line 195
+[24-Sep-2020 10:07:24 UTC] PHP Stack trace:
+[24-Sep-2020 10:07:24 UTC] PHP   1. {main}() /home/mieone/Downloads/wordpress/app/public/wp-admin/index.php:0
+[24-Sep-2020 10:07:24 UTC] PHP   2. wp_dashboard() /home/mieone/Downloads/wordpress/app/public/wp-admin/index.php:177
+[24-Sep-2020 10:07:24 UTC] PHP   3. do_meta_boxes() /home/mieone/Downloads/wordpress/app/public/wp-admin/includes/dashboard.php:249
+[24-Sep-2020 10:07:24 UTC] PHP   4. wp_dashboard_quick_press() /home/mieone/Downloads/wordpress/app/public/wp-admin/includes/template.php:1389
+[24-Sep-2020 10:07:24 UTC] PHP   5. get_default_post_to_edit() /home/mieone/Downloads/wordpress/app/public/wp-admin/includes/dashboard.php:519
+[24-Sep-2020 10:07:24 UTC] PHP   6. wp_insert_post() /home/mieone/Downloads/wordpress/app/public/wp-admin/includes/post.php:687
+[24-Sep-2020 10:07:24 UTC] PHP   7. apply_filters() /home/mieone/Downloads/wordpress/app/public/wp-includes/post.php:3971
+[24-Sep-2020 10:07:24 UTC] PHP   8. WP_Hook->apply_filters() /home/mieone/Downloads/wordpress/app/public/wp-includes/plugin.php:206
+[24-Sep-2020 10:07:24 UTC] PHP   9. LocalWP_Live_Link_Helper->make_link_local_in_posts() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-hook.php:289
+[24-Sep-2020 10:08:33 UTC] PHP Warning:  Attempt to assign property 'post_content' of non-object in /home/mieone/Downloads/wordpress/app/public/wp-content/mu-plugins/local-by-flywheel-live-link-helper.php on line 195
+[24-Sep-2020 10:08:33 UTC] PHP Stack trace:
+[24-Sep-2020 10:08:33 UTC] PHP   1. {main}() /home/mieone/Downloads/wordpress/app/public/wp-admin/customize.php:0
+[24-Sep-2020 10:08:33 UTC] PHP   2. require_once() /home/mieone/Downloads/wordpress/app/public/wp-admin/customize.php:13
+[24-Sep-2020 10:08:33 UTC] PHP   3. require_once() /home/mieone/Downloads/wordpress/app/public/wp-admin/admin.php:34
+[24-Sep-2020 10:08:33 UTC] PHP   4. require_once() /home/mieone/Downloads/wordpress/app/public/wp-load.php:37
+[24-Sep-2020 10:08:33 UTC] PHP   5. require_once() /home/mieone/Downloads/wordpress/app/public/wp-config.php:77
+[24-Sep-2020 10:08:33 UTC] PHP   6. do_action() /home/mieone/Downloads/wordpress/app/public/wp-settings.php:524
+[24-Sep-2020 10:08:33 UTC] PHP   7. WP_Hook->do_action() /home/mieone/Downloads/wordpress/app/public/wp-includes/plugin.php:478
+[24-Sep-2020 10:08:33 UTC] PHP   8. WP_Hook->apply_filters() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-hook.php:311
+[24-Sep-2020 10:08:33 UTC] PHP   9. WP_Customize_Manager->import_theme_starter_content() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-hook.php:287
+[24-Sep-2020 10:08:33 UTC] PHP  10. WP_Customize_Nav_Menus->insert_auto_draft_post() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-customize-manager.php:1429
+[24-Sep-2020 10:08:33 UTC] PHP  11. wp_insert_post() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-customize-nav-menus.php:973
+[24-Sep-2020 10:08:33 UTC] PHP  12. apply_filters() /home/mieone/Downloads/wordpress/app/public/wp-includes/post.php:3971
+[24-Sep-2020 10:08:33 UTC] PHP  13. WP_Hook->apply_filters() /home/mieone/Downloads/wordpress/app/public/wp-includes/plugin.php:206
+[24-Sep-2020 10:08:33 UTC] PHP  14. LocalWP_Live_Link_Helper->make_link_local_in_posts() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-hook.php:289
+[24-Sep-2020 10:08:34 UTC] PHP Warning:  Attempt to assign property 'post_content' of non-object in /home/mieone/Downloads/wordpress/app/public/wp-content/mu-plugins/local-by-flywheel-live-link-helper.php on line 195
+[24-Sep-2020 10:08:34 UTC] PHP Stack trace:
+[24-Sep-2020 10:08:34 UTC] PHP   1. {main}() /home/mieone/Downloads/wordpress/app/public/wp-admin/customize.php:0
+[24-Sep-2020 10:08:34 UTC] PHP   2. require_once() /home/mieone/Downloads/wordpress/app/public/wp-admin/customize.php:13
+[24-Sep-2020 10:08:34 UTC] PHP   3. require_once() /home/mieone/Downloads/wordpress/app/public/wp-admin/admin.php:34
+[24-Sep-2020 10:08:34 UTC] PHP   4. require_once() /home/mieone/Downloads/wordpress/app/public/wp-load.php:37
+[24-Sep-2020 10:08:34 UTC] PHP   5. require_once() /home/mieone/Downloads/wordpress/app/public/wp-config.php:77
+[24-Sep-2020 10:08:34 UTC] PHP   6. do_action() /home/mieone/Downloads/wordpress/app/public/wp-settings.php:524
+[24-Sep-2020 10:08:34 UTC] PHP   7. WP_Hook->do_action() /home/mieone/Downloads/wordpress/app/public/wp-includes/plugin.php:478
+[24-Sep-2020 10:08:34 UTC] PHP   8. WP_Hook->apply_filters() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-hook.php:311
+[24-Sep-2020 10:08:34 UTC] PHP   9. WP_Customize_Manager->import_theme_starter_content() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-hook.php:287
+[24-Sep-2020 10:08:34 UTC] PHP  10. WP_Customize_Nav_Menus->insert_auto_draft_post() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-customize-manager.php:1429
+[24-Sep-2020 10:08:34 UTC] PHP  11. wp_insert_post() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-customize-nav-menus.php:973
+[24-Sep-2020 10:08:34 UTC] PHP  12. apply_filters() /home/mieone/Downloads/wordpress/app/public/wp-includes/post.php:3971
+[24-Sep-2020 10:08:34 UTC] PHP  13. WP_Hook->apply_filters() /home/mieone/Downloads/wordpress/app/public/wp-includes/plugin.php:206
+[24-Sep-2020 10:08:34 UTC] PHP  14. LocalWP_Live_Link_Helper->make_link_local_in_posts() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-hook.php:289
+[24-Sep-2020 10:08:34 UTC] PHP Warning:  Attempt to assign property 'post_content' of non-object in /home/mieone/Downloads/wordpress/app/public/wp-content/mu-plugins/local-by-flywheel-live-link-helper.php on line 195
+[24-Sep-2020 10:08:34 UTC] PHP Stack trace:
+[24-Sep-2020 10:08:34 UTC] PHP   1. {main}() /home/mieone/Downloads/wordpress/app/public/wp-admin/customize.php:0
+[24-Sep-2020 10:08:34 UTC] PHP   2. require_once() /home/mieone/Downloads/wordpress/app/public/wp-admin/customize.php:13
+[24-Sep-2020 10:08:34 UTC] PHP   3. require_once() /home/mieone/Downloads/wordpress/app/public/wp-admin/admin.php:34
+[24-Sep-2020 10:08:34 UTC] PHP   4. require_once() /home/mieone/Downloads/wordpress/app/public/wp-load.php:37
+[24-Sep-2020 10:08:34 UTC] PHP   5. require_once() /home/mieone/Downloads/wordpress/app/public/wp-config.php:77
+[24-Sep-2020 10:08:34 UTC] PHP   6. do_action() /home/mieone/Downloads/wordpress/app/public/wp-settings.php:524
+[24-Sep-2020 10:08:34 UTC] PHP   7. WP_Hook->do_action() /home/mieone/Downloads/wordpress/app/public/wp-includes/plugin.php:478
+[24-Sep-2020 10:08:34 UTC] PHP   8. WP_Hook->apply_filters() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-hook.php:311
+[24-Sep-2020 10:08:34 UTC] PHP   9. WP_Customize_Manager->import_theme_starter_content() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-hook.php:287
+[24-Sep-2020 10:08:34 UTC] PHP  10. WP_Customize_Nav_Menus->insert_auto_draft_post() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-customize-manager.php:1429
+[24-Sep-2020 10:08:34 UTC] PHP  11. wp_insert_post() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-customize-nav-menus.php:973
+[24-Sep-2020 10:08:34 UTC] PHP  12. apply_filters() /home/mieone/Downloads/wordpress/app/public/wp-includes/post.php:3971
+[24-Sep-2020 10:08:34 UTC] PHP  13. WP_Hook->apply_filters() /home/mieone/Downloads/wordpress/app/public/wp-includes/plugin.php:206
+[24-Sep-2020 10:08:34 UTC] PHP  14. LocalWP_Live_Link_Helper->make_link_local_in_posts() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-hook.php:289
+[24-Sep-2020 10:08:35 UTC] PHP Warning:  Attempt to assign property 'post_content' of non-object in /home/mieone/Downloads/wordpress/app/public/wp-content/mu-plugins/local-by-flywheel-live-link-helper.php on line 195
+[24-Sep-2020 10:08:35 UTC] PHP Stack trace:
+[24-Sep-2020 10:08:35 UTC] PHP   1. {main}() /home/mieone/Downloads/wordpress/app/public/wp-admin/customize.php:0
+[24-Sep-2020 10:08:35 UTC] PHP   2. require_once() /home/mieone/Downloads/wordpress/app/public/wp-admin/customize.php:13
+[24-Sep-2020 10:08:35 UTC] PHP   3. require_once() /home/mieone/Downloads/wordpress/app/public/wp-admin/admin.php:34
+[24-Sep-2020 10:08:35 UTC] PHP   4. require_once() /home/mieone/Downloads/wordpress/app/public/wp-load.php:37
+[24-Sep-2020 10:08:35 UTC] PHP   5. require_once() /home/mieone/Downloads/wordpress/app/public/wp-config.php:77
+[24-Sep-2020 10:08:35 UTC] PHP   6. do_action() /home/mieone/Downloads/wordpress/app/public/wp-settings.php:524
+[24-Sep-2020 10:08:35 UTC] PHP   7. WP_Hook->do_action() /home/mieone/Downloads/wordpress/app/public/wp-includes/plugin.php:478
+[24-Sep-2020 10:08:35 UTC] PHP   8. WP_Hook->apply_filters() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-hook.php:311
+[24-Sep-2020 10:08:35 UTC] PHP   9. WP_Customize_Manager->import_theme_starter_content() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-hook.php:287
+[24-Sep-2020 10:08:35 UTC] PHP  10. WP_Customize_Nav_Menus->insert_auto_draft_post() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-customize-manager.php:1429
+[24-Sep-2020 10:08:35 UTC] PHP  11. wp_insert_post() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-customize-nav-menus.php:973
+[24-Sep-2020 10:08:35 UTC] PHP  12. apply_filters() /home/mieone/Downloads/wordpress/app/public/wp-includes/post.php:3971
+[24-Sep-2020 10:08:35 UTC] PHP  13. WP_Hook->apply_filters() /home/mieone/Downloads/wordpress/app/public/wp-includes/plugin.php:206
+[24-Sep-2020 10:08:35 UTC] PHP  14. LocalWP_Live_Link_Helper->make_link_local_in_posts() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-hook.php:289
+[24-Sep-2020 10:08:36 UTC] PHP Warning:  Attempt to assign property 'post_content' of non-object in /home/mieone/Downloads/wordpress/app/public/wp-content/mu-plugins/local-by-flywheel-live-link-helper.php on line 195
+[24-Sep-2020 10:08:36 UTC] PHP Stack trace:
+[24-Sep-2020 10:08:36 UTC] PHP   1. {main}() /home/mieone/Downloads/wordpress/app/public/wp-admin/customize.php:0
+[24-Sep-2020 10:08:36 UTC] PHP   2. require_once() /home/mieone/Downloads/wordpress/app/public/wp-admin/customize.php:13
+[24-Sep-2020 10:08:36 UTC] PHP   3. require_once() /home/mieone/Downloads/wordpress/app/public/wp-admin/admin.php:34
+[24-Sep-2020 10:08:36 UTC] PHP   4. require_once() /home/mieone/Downloads/wordpress/app/public/wp-load.php:37
+[24-Sep-2020 10:08:36 UTC] PHP   5. require_once() /home/mieone/Downloads/wordpress/app/public/wp-config.php:77
+[24-Sep-2020 10:08:36 UTC] PHP   6. do_action() /home/mieone/Downloads/wordpress/app/public/wp-settings.php:568
+[24-Sep-2020 10:08:36 UTC] PHP   7. WP_Hook->do_action() /home/mieone/Downloads/wordpress/app/public/wp-includes/plugin.php:478
+[24-Sep-2020 10:08:36 UTC] PHP   8. WP_Hook->apply_filters() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-hook.php:311
+[24-Sep-2020 10:08:36 UTC] PHP   9. WP_Customize_Manager->wp_loaded() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-hook.php:287
+[24-Sep-2020 10:08:36 UTC] PHP  10. do_action() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-customize-manager.php:933
+[24-Sep-2020 10:08:36 UTC] PHP  11. WP_Hook->do_action() /home/mieone/Downloads/wordpress/app/public/wp-includes/plugin.php:478
+[24-Sep-2020 10:08:36 UTC] PHP  12. WP_Hook->apply_filters() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-hook.php:311
+[24-Sep-2020 10:08:36 UTC] PHP  13. WP_Customize_Manager->_save_starter_content_changeset() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-hook.php:287
+[24-Sep-2020 10:08:36 UTC] PHP  14. WP_Customize_Manager->save_changeset_post() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-customize-manager.php:1707
+[24-Sep-2020 10:08:36 UTC] PHP  15. wp_insert_post() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-customize-manager.php:2969
+[24-Sep-2020 10:08:36 UTC] PHP  16. apply_filters() /home/mieone/Downloads/wordpress/app/public/wp-includes/post.php:3971
+[24-Sep-2020 10:08:36 UTC] PHP  17. WP_Hook->apply_filters() /home/mieone/Downloads/wordpress/app/public/wp-includes/plugin.php:206
+[24-Sep-2020 10:08:36 UTC] PHP  18. LocalWP_Live_Link_Helper->make_link_local_in_posts() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-hook.php:289
+[24-Sep-2020 10:08:36 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mieone/Downloads/wordpress/app/public/wp-content/mu-plugins/local-by-flywheel-live-link-helper.php:195) in /home/mieone/Downloads/wordpress/app/public/wp-includes/functions.php on line 6270
+[24-Sep-2020 10:08:36 UTC] PHP Stack trace:
+[24-Sep-2020 10:08:36 UTC] PHP   1. {main}() /home/mieone/Downloads/wordpress/app/public/wp-admin/customize.php:0
+[24-Sep-2020 10:08:36 UTC] PHP   2. require_once() /home/mieone/Downloads/wordpress/app/public/wp-admin/customize.php:13
+[24-Sep-2020 10:08:36 UTC] PHP   3. do_action() /home/mieone/Downloads/wordpress/app/public/wp-admin/admin.php:175
+[24-Sep-2020 10:08:36 UTC] PHP   4. WP_Hook->do_action() /home/mieone/Downloads/wordpress/app/public/wp-includes/plugin.php:478
+[24-Sep-2020 10:08:36 UTC] PHP   5. WP_Hook->apply_filters() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-hook.php:311
+[24-Sep-2020 10:08:36 UTC] PHP   6. send_frame_options_header() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-hook.php:285
+[24-Sep-2020 10:08:36 UTC] PHP   7. header() /home/mieone/Downloads/wordpress/app/public/wp-includes/functions.php:6270
+[24-Sep-2020 10:08:36 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mieone/Downloads/wordpress/app/public/wp-content/mu-plugins/local-by-flywheel-live-link-helper.php:195) in /home/mieone/Downloads/wordpress/app/public/wp-admin/includes/misc.php on line 1310
+[24-Sep-2020 10:08:36 UTC] PHP Stack trace:
+[24-Sep-2020 10:08:36 UTC] PHP   1. {main}() /home/mieone/Downloads/wordpress/app/public/wp-admin/customize.php:0
+[24-Sep-2020 10:08:36 UTC] PHP   2. require_once() /home/mieone/Downloads/wordpress/app/public/wp-admin/customize.php:13
+[24-Sep-2020 10:08:36 UTC] PHP   3. do_action() /home/mieone/Downloads/wordpress/app/public/wp-admin/admin.php:175
+[24-Sep-2020 10:08:36 UTC] PHP   4. WP_Hook->do_action() /home/mieone/Downloads/wordpress/app/public/wp-includes/plugin.php:478
+[24-Sep-2020 10:08:36 UTC] PHP   5. WP_Hook->apply_filters() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-hook.php:311
+[24-Sep-2020 10:08:36 UTC] PHP   6. wp_admin_headers() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-hook.php:287
+[24-Sep-2020 10:08:36 UTC] PHP   7. header() /home/mieone/Downloads/wordpress/app/public/wp-admin/includes/misc.php:1310
+[24-Sep-2020 10:08:37 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mieone/Downloads/wordpress/app/public/wp-content/mu-plugins/local-by-flywheel-live-link-helper.php:195) in /home/mieone/Downloads/wordpress/app/public/wp-admin/customize.php on line 126
+[24-Sep-2020 10:08:37 UTC] PHP Stack trace:
+[24-Sep-2020 10:08:37 UTC] PHP   1. {main}() /home/mieone/Downloads/wordpress/app/public/wp-admin/customize.php:0
+[24-Sep-2020 10:08:37 UTC] PHP   2. header() /home/mieone/Downloads/wordpress/app/public/wp-admin/customize.php:126
+[24-Sep-2020 10:08:37 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mieone/Downloads/wordpress/app/public/wp-content/mu-plugins/local-by-flywheel-live-link-helper.php:195) in /home/mieone/Downloads/wordpress/app/public/wp-includes/option.php on line 1050
+[24-Sep-2020 10:08:37 UTC] PHP Stack trace:
+[24-Sep-2020 10:08:37 UTC] PHP   1. {main}() /home/mieone/Downloads/wordpress/app/public/wp-admin/customize.php:0
+[24-Sep-2020 10:08:37 UTC] PHP   2. wp_user_settings() /home/mieone/Downloads/wordpress/app/public/wp-admin/customize.php:128
+[24-Sep-2020 10:08:37 UTC] PHP   3. setcookie() /home/mieone/Downloads/wordpress/app/public/wp-includes/option.php:1050
+[24-Sep-2020 10:08:37 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mieone/Downloads/wordpress/app/public/wp-content/mu-plugins/local-by-flywheel-live-link-helper.php:195) in /home/mieone/Downloads/wordpress/app/public/wp-includes/option.php on line 1051
+[24-Sep-2020 10:08:37 UTC] PHP Stack trace:
+[24-Sep-2020 10:08:37 UTC] PHP   1. {main}() /home/mieone/Downloads/wordpress/app/public/wp-admin/customize.php:0
+[24-Sep-2020 10:08:37 UTC] PHP   2. wp_user_settings() /home/mieone/Downloads/wordpress/app/public/wp-admin/customize.php:128
+[24-Sep-2020 10:08:37 UTC] PHP   3. setcookie() /home/mieone/Downloads/wordpress/app/public/wp-includes/option.php:1051
+[24-Sep-2020 10:10:00 UTC] PHP Catchable fatal error:  Object of class stdClass could not be converted to string in /home/mieone/Downloads/wordpress/app/public/wp-content/mu-plugins/local-by-flywheel-live-link-helper.php on line 154
+[24-Sep-2020 10:10:00 UTC] PHP Stack trace:
+[24-Sep-2020 10:10:00 UTC] PHP   1. {main}() /home/mieone/Downloads/wordpress/app/public/wp-admin/admin-ajax.php:0
+[24-Sep-2020 10:10:00 UTC] PHP   2. do_action() /home/mieone/Downloads/wordpress/app/public/wp-admin/admin-ajax.php:176
+[24-Sep-2020 10:10:00 UTC] PHP   3. WP_Hook->do_action() /home/mieone/Downloads/wordpress/app/public/wp-includes/plugin.php:478
+[24-Sep-2020 10:10:00 UTC] PHP   4. WP_Hook->apply_filters() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-hook.php:311
+[24-Sep-2020 10:10:00 UTC] PHP   5. wp_ajax_install_plugin() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-hook.php:287
+[24-Sep-2020 10:10:00 UTC] PHP   6. Plugin_Upgrader->install() /home/mieone/Downloads/wordpress/app/public/wp-admin/includes/ajax-actions.php:4345
+[24-Sep-2020 10:10:00 UTC] PHP   7. Plugin_Upgrader->run() /home/mieone/Downloads/wordpress/app/public/wp-admin/includes/class-plugin-upgrader.php:137
+[24-Sep-2020 10:10:00 UTC] PHP   8. do_action() /home/mieone/Downloads/wordpress/app/public/wp-admin/includes/class-wp-upgrader.php:847
+[24-Sep-2020 10:10:00 UTC] PHP   9. WP_Hook->do_action() /home/mieone/Downloads/wordpress/app/public/wp-includes/plugin.php:478
+[24-Sep-2020 10:10:00 UTC] PHP  10. WP_Hook->apply_filters() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-hook.php:311
+[24-Sep-2020 10:10:00 UTC] PHP  11. wp_version_check() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-hook.php:285
+[24-Sep-2020 10:10:00 UTC] PHP  12. set_site_transient() /home/mieone/Downloads/wordpress/app/public/wp-includes/update.php:74
+[24-Sep-2020 10:10:00 UTC] PHP  13. update_site_option() /home/mieone/Downloads/wordpress/app/public/wp-includes/option.php:1962
+[24-Sep-2020 10:10:00 UTC] PHP  14. update_network_option() /home/mieone/Downloads/wordpress/app/public/wp-includes/option.php:1294
+[24-Sep-2020 10:10:00 UTC] PHP  15. update_option() /home/mieone/Downloads/wordpress/app/public/wp-includes/option.php:1724
+[24-Sep-2020 10:10:00 UTC] PHP  16. apply_filters() /home/mieone/Downloads/wordpress/app/public/wp-includes/option.php:394
+[24-Sep-2020 10:10:00 UTC] PHP  17. WP_Hook->apply_filters() /home/mieone/Downloads/wordpress/app/public/wp-includes/plugin.php:206
+[24-Sep-2020 10:10:00 UTC] PHP  18. LocalWP_Live_Link_Helper->make_link_local() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-hook.php:289
+[24-Sep-2020 10:10:00 UTC] PHP  19. LocalWP_Live_Link_Helper->replace_host() /home/mieone/Downloads/wordpress/app/public/wp-content/mu-plugins/local-by-flywheel-live-link-helper.php:186
+[24-Sep-2020 10:10:00 UTC] PHP  20. str_replace() /home/mieone/Downloads/wordpress/app/public/wp-content/mu-plugins/local-by-flywheel-live-link-helper.php:154
+[24-Sep-2020 10:10:47 UTC] PHP Catchable fatal error:  Object of class stdClass could not be converted to string in /home/mieone/Downloads/wordpress/app/public/wp-content/mu-plugins/local-by-flywheel-live-link-helper.php on line 154
+[24-Sep-2020 10:10:47 UTC] PHP Stack trace:
+[24-Sep-2020 10:10:47 UTC] PHP   1. {main}() /home/mieone/Downloads/wordpress/app/public/wp-admin/update.php:0
+[24-Sep-2020 10:10:47 UTC] PHP   2. require_once() /home/mieone/Downloads/wordpress/app/public/wp-admin/update.php:16
+[24-Sep-2020 10:10:47 UTC] PHP   3. do_action() /home/mieone/Downloads/wordpress/app/public/wp-admin/admin.php:175
+[24-Sep-2020 10:10:47 UTC] PHP   4. WP_Hook->do_action() /home/mieone/Downloads/wordpress/app/public/wp-includes/plugin.php:478
+[24-Sep-2020 10:10:47 UTC] PHP   5. WP_Hook->apply_filters() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-hook.php:311
+[24-Sep-2020 10:10:47 UTC] PHP   6. _maybe_update_plugins() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-hook.php:287
+[24-Sep-2020 10:10:47 UTC] PHP   7. wp_update_plugins() /home/mieone/Downloads/wordpress/app/public/wp-includes/update.php:813
+[24-Sep-2020 10:10:47 UTC] PHP   8. set_site_transient() /home/mieone/Downloads/wordpress/app/public/wp-includes/update.php:445
+[24-Sep-2020 10:10:47 UTC] PHP   9. update_site_option() /home/mieone/Downloads/wordpress/app/public/wp-includes/option.php:1962
+[24-Sep-2020 10:10:47 UTC] PHP  10. update_network_option() /home/mieone/Downloads/wordpress/app/public/wp-includes/option.php:1294
+[24-Sep-2020 10:10:47 UTC] PHP  11. update_option() /home/mieone/Downloads/wordpress/app/public/wp-includes/option.php:1724
+[24-Sep-2020 10:10:47 UTC] PHP  12. apply_filters() /home/mieone/Downloads/wordpress/app/public/wp-includes/option.php:394
+[24-Sep-2020 10:10:47 UTC] PHP  13. WP_Hook->apply_filters() /home/mieone/Downloads/wordpress/app/public/wp-includes/plugin.php:206
+[24-Sep-2020 10:10:47 UTC] PHP  14. LocalWP_Live_Link_Helper->make_link_local() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-hook.php:289
+[24-Sep-2020 10:10:47 UTC] PHP  15. LocalWP_Live_Link_Helper->replace_host() /home/mieone/Downloads/wordpress/app/public/wp-content/mu-plugins/local-by-flywheel-live-link-helper.php:186
+[24-Sep-2020 10:10:47 UTC] PHP  16. str_replace() /home/mieone/Downloads/wordpress/app/public/wp-content/mu-plugins/local-by-flywheel-live-link-helper.php:154
+[24-Sep-2020 10:18:34 UTC] PHP Catchable fatal error:  Object of class stdClass could not be converted to string in /home/mieone/Downloads/wordpress/app/public/wp-content/mu-plugins/local-by-flywheel-live-link-helper.php on line 154
+[24-Sep-2020 10:18:34 UTC] PHP Stack trace:
+[24-Sep-2020 10:18:34 UTC] PHP   1. {main}() /home/mieone/Downloads/wordpress/app/public/wp-admin/plugins.php:0
+[24-Sep-2020 10:18:34 UTC] PHP   2. require_once() /home/mieone/Downloads/wordpress/app/public/wp-admin/plugins.php:10
+[24-Sep-2020 10:18:34 UTC] PHP   3. do_action() /home/mieone/Downloads/wordpress/app/public/wp-admin/admin.php:374
+[24-Sep-2020 10:18:34 UTC] PHP   4. WP_Hook->do_action() /home/mieone/Downloads/wordpress/app/public/wp-includes/plugin.php:478
+[24-Sep-2020 10:18:34 UTC] PHP   5. WP_Hook->apply_filters() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-hook.php:311
+[24-Sep-2020 10:18:34 UTC] PHP   6. wp_update_plugins() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-hook.php:287
+[24-Sep-2020 10:18:34 UTC] PHP   7. set_site_transient() /home/mieone/Downloads/wordpress/app/public/wp-includes/update.php:347
+[24-Sep-2020 10:18:34 UTC] PHP   8. update_site_option() /home/mieone/Downloads/wordpress/app/public/wp-includes/option.php:1962
+[24-Sep-2020 10:18:34 UTC] PHP   9. update_network_option() /home/mieone/Downloads/wordpress/app/public/wp-includes/option.php:1294
+[24-Sep-2020 10:18:34 UTC] PHP  10. update_option() /home/mieone/Downloads/wordpress/app/public/wp-includes/option.php:1724
+[24-Sep-2020 10:18:34 UTC] PHP  11. apply_filters() /home/mieone/Downloads/wordpress/app/public/wp-includes/option.php:394
+[24-Sep-2020 10:18:34 UTC] PHP  12. WP_Hook->apply_filters() /home/mieone/Downloads/wordpress/app/public/wp-includes/plugin.php:206
+[24-Sep-2020 10:18:34 UTC] PHP  13. LocalWP_Live_Link_Helper->make_link_local() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-hook.php:289
+[24-Sep-2020 10:18:34 UTC] PHP  14. LocalWP_Live_Link_Helper->replace_host() /home/mieone/Downloads/wordpress/app/public/wp-content/mu-plugins/local-by-flywheel-live-link-helper.php:186
+[24-Sep-2020 10:18:34 UTC] PHP  15. str_replace() /home/mieone/Downloads/wordpress/app/public/wp-content/mu-plugins/local-by-flywheel-live-link-helper.php:154
+[24-Sep-2020 10:18:38 UTC] PHP Catchable fatal error:  Object of class stdClass could not be converted to string in /home/mieone/Downloads/wordpress/app/public/wp-content/mu-plugins/local-by-flywheel-live-link-helper.php on line 154
+[24-Sep-2020 10:18:38 UTC] PHP Stack trace:
+[24-Sep-2020 10:18:38 UTC] PHP   1. {main}() /home/mieone/Downloads/wordpress/app/public/wp-admin/plugins.php:0
+[24-Sep-2020 10:18:38 UTC] PHP   2. require_once() /home/mieone/Downloads/wordpress/app/public/wp-admin/plugins.php:10
+[24-Sep-2020 10:18:38 UTC] PHP   3. do_action() /home/mieone/Downloads/wordpress/app/public/wp-admin/admin.php:374
+[24-Sep-2020 10:18:38 UTC] PHP   4. WP_Hook->do_action() /home/mieone/Downloads/wordpress/app/public/wp-includes/plugin.php:478
+[24-Sep-2020 10:18:38 UTC] PHP   5. WP_Hook->apply_filters() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-hook.php:311
+[24-Sep-2020 10:18:38 UTC] PHP   6. wp_update_plugins() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-hook.php:287
+[24-Sep-2020 10:18:38 UTC] PHP   7. set_site_transient() /home/mieone/Downloads/wordpress/app/public/wp-includes/update.php:347
+[24-Sep-2020 10:18:38 UTC] PHP   8. update_site_option() /home/mieone/Downloads/wordpress/app/public/wp-includes/option.php:1962
+[24-Sep-2020 10:18:38 UTC] PHP   9. update_network_option() /home/mieone/Downloads/wordpress/app/public/wp-includes/option.php:1294
+[24-Sep-2020 10:18:38 UTC] PHP  10. update_option() /home/mieone/Downloads/wordpress/app/public/wp-includes/option.php:1724
+[24-Sep-2020 10:18:38 UTC] PHP  11. apply_filters() /home/mieone/Downloads/wordpress/app/public/wp-includes/option.php:394
+[24-Sep-2020 10:18:38 UTC] PHP  12. WP_Hook->apply_filters() /home/mieone/Downloads/wordpress/app/public/wp-includes/plugin.php:206
+[24-Sep-2020 10:18:38 UTC] PHP  13. LocalWP_Live_Link_Helper->make_link_local() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-hook.php:289
+[24-Sep-2020 10:18:38 UTC] PHP  14. LocalWP_Live_Link_Helper->replace_host() /home/mieone/Downloads/wordpress/app/public/wp-content/mu-plugins/local-by-flywheel-live-link-helper.php:186
+[24-Sep-2020 10:18:38 UTC] PHP  15. str_replace() /home/mieone/Downloads/wordpress/app/public/wp-content/mu-plugins/local-by-flywheel-live-link-helper.php:154
+[24-Sep-2020 10:18:42 UTC] PHP Catchable fatal error:  Object of class stdClass could not be converted to string in /home/mieone/Downloads/wordpress/app/public/wp-content/mu-plugins/local-by-flywheel-live-link-helper.php on line 154
+[24-Sep-2020 10:18:42 UTC] PHP Stack trace:
+[24-Sep-2020 10:18:42 UTC] PHP   1. {main}() /home/mieone/Downloads/wordpress/app/public/wp-admin/plugins.php:0
+[24-Sep-2020 10:18:42 UTC] PHP   2. require_once() /home/mieone/Downloads/wordpress/app/public/wp-admin/plugins.php:10
+[24-Sep-2020 10:18:42 UTC] PHP   3. do_action() /home/mieone/Downloads/wordpress/app/public/wp-admin/admin.php:374
+[24-Sep-2020 10:18:42 UTC] PHP   4. WP_Hook->do_action() /home/mieone/Downloads/wordpress/app/public/wp-includes/plugin.php:478
+[24-Sep-2020 10:18:42 UTC] PHP   5. WP_Hook->apply_filters() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-hook.php:311
+[24-Sep-2020 10:18:42 UTC] PHP   6. wp_update_plugins() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-hook.php:287
+[24-Sep-2020 10:18:42 UTC] PHP   7. set_site_transient() /home/mieone/Downloads/wordpress/app/public/wp-includes/update.php:347
+[24-Sep-2020 10:18:42 UTC] PHP   8. update_site_option() /home/mieone/Downloads/wordpress/app/public/wp-includes/option.php:1962
+[24-Sep-2020 10:18:42 UTC] PHP   9. update_network_option() /home/mieone/Downloads/wordpress/app/public/wp-includes/option.php:1294
+[24-Sep-2020 10:18:42 UTC] PHP  10. update_option() /home/mieone/Downloads/wordpress/app/public/wp-includes/option.php:1724
+[24-Sep-2020 10:18:42 UTC] PHP  11. apply_filters() /home/mieone/Downloads/wordpress/app/public/wp-includes/option.php:394
+[24-Sep-2020 10:18:42 UTC] PHP  12. WP_Hook->apply_filters() /home/mieone/Downloads/wordpress/app/public/wp-includes/plugin.php:206
+[24-Sep-2020 10:18:42 UTC] PHP  13. LocalWP_Live_Link_Helper->make_link_local() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-hook.php:289
+[24-Sep-2020 10:18:42 UTC] PHP  14. LocalWP_Live_Link_Helper->replace_host() /home/mieone/Downloads/wordpress/app/public/wp-content/mu-plugins/local-by-flywheel-live-link-helper.php:186
+[24-Sep-2020 10:18:42 UTC] PHP  15. str_replace() /home/mieone/Downloads/wordpress/app/public/wp-content/mu-plugins/local-by-flywheel-live-link-helper.php:154
+[24-Sep-2020 10:19:06 UTC] PHP Catchable fatal error:  Object of class stdClass could not be converted to string in /home/mieone/Downloads/wordpress/app/public/wp-content/mu-plugins/local-by-flywheel-live-link-helper.php on line 154
+[24-Sep-2020 10:19:06 UTC] PHP Stack trace:
+[24-Sep-2020 10:19:06 UTC] PHP   1. {main}() /home/mieone/Downloads/wordpress/app/public/wp-admin/plugins.php:0
+[24-Sep-2020 10:19:06 UTC] PHP   2. require_once() /home/mieone/Downloads/wordpress/app/public/wp-admin/plugins.php:10
+[24-Sep-2020 10:19:06 UTC] PHP   3. do_action() /home/mieone/Downloads/wordpress/app/public/wp-admin/admin.php:374
+[24-Sep-2020 10:19:06 UTC] PHP   4. WP_Hook->do_action() /home/mieone/Downloads/wordpress/app/public/wp-includes/plugin.php:478
+[24-Sep-2020 10:19:06 UTC] PHP   5. WP_Hook->apply_filters() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-hook.php:311
+[24-Sep-2020 10:19:06 UTC] PHP   6. wp_update_plugins() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-hook.php:287
+[24-Sep-2020 10:19:06 UTC] PHP   7. set_site_transient() /home/mieone/Downloads/wordpress/app/public/wp-includes/update.php:347
+[24-Sep-2020 10:19:06 UTC] PHP   8. update_site_option() /home/mieone/Downloads/wordpress/app/public/wp-includes/option.php:1962
+[24-Sep-2020 10:19:06 UTC] PHP   9. update_network_option() /home/mieone/Downloads/wordpress/app/public/wp-includes/option.php:1294
+[24-Sep-2020 10:19:06 UTC] PHP  10. update_option() /home/mieone/Downloads/wordpress/app/public/wp-includes/option.php:1724
+[24-Sep-2020 10:19:06 UTC] PHP  11. apply_filters() /home/mieone/Downloads/wordpress/app/public/wp-includes/option.php:394
+[24-Sep-2020 10:19:06 UTC] PHP  12. WP_Hook->apply_filters() /home/mieone/Downloads/wordpress/app/public/wp-includes/plugin.php:206
+[24-Sep-2020 10:19:06 UTC] PHP  13. LocalWP_Live_Link_Helper->make_link_local() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-hook.php:289
+[24-Sep-2020 10:19:06 UTC] PHP  14. LocalWP_Live_Link_Helper->replace_host() /home/mieone/Downloads/wordpress/app/public/wp-content/mu-plugins/local-by-flywheel-live-link-helper.php:186
+[24-Sep-2020 10:19:06 UTC] PHP  15. str_replace() /home/mieone/Downloads/wordpress/app/public/wp-content/mu-plugins/local-by-flywheel-live-link-helper.php:154
+[24-Sep-2020 10:21:09 UTC] PHP Catchable fatal error:  Object of class stdClass could not be converted to string in /home/mieone/Downloads/wordpress/app/public/wp-content/mu-plugins/local-by-flywheel-live-link-helper.php on line 154
+[24-Sep-2020 10:21:09 UTC] PHP Stack trace:
+[24-Sep-2020 10:21:09 UTC] PHP   1. {main}() /home/mieone/Downloads/wordpress/app/public/wp-admin/plugins.php:0
+[24-Sep-2020 10:21:09 UTC] PHP   2. require_once() /home/mieone/Downloads/wordpress/app/public/wp-admin/plugins.php:10
+[24-Sep-2020 10:21:09 UTC] PHP   3. do_action() /home/mieone/Downloads/wordpress/app/public/wp-admin/admin.php:374
+[24-Sep-2020 10:21:09 UTC] PHP   4. WP_Hook->do_action() /home/mieone/Downloads/wordpress/app/public/wp-includes/plugin.php:478
+[24-Sep-2020 10:21:09 UTC] PHP   5. WP_Hook->apply_filters() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-hook.php:311
+[24-Sep-2020 10:21:09 UTC] PHP   6. wp_update_plugins() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-hook.php:287
+[24-Sep-2020 10:21:09 UTC] PHP   7. set_site_transient() /home/mieone/Downloads/wordpress/app/public/wp-includes/update.php:347
+[24-Sep-2020 10:21:09 UTC] PHP   8. update_site_option() /home/mieone/Downloads/wordpress/app/public/wp-includes/option.php:1962
+[24-Sep-2020 10:21:09 UTC] PHP   9. update_network_option() /home/mieone/Downloads/wordpress/app/public/wp-includes/option.php:1294
+[24-Sep-2020 10:21:09 UTC] PHP  10. update_option() /home/mieone/Downloads/wordpress/app/public/wp-includes/option.php:1724
+[24-Sep-2020 10:21:09 UTC] PHP  11. apply_filters() /home/mieone/Downloads/wordpress/app/public/wp-includes/option.php:394
+[24-Sep-2020 10:21:09 UTC] PHP  12. WP_Hook->apply_filters() /home/mieone/Downloads/wordpress/app/public/wp-includes/plugin.php:206
+[24-Sep-2020 10:21:09 UTC] PHP  13. LocalWP_Live_Link_Helper->make_link_local() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-hook.php:289
+[24-Sep-2020 10:21:09 UTC] PHP  14. LocalWP_Live_Link_Helper->replace_host() /home/mieone/Downloads/wordpress/app/public/wp-content/mu-plugins/local-by-flywheel-live-link-helper.php:186
+[24-Sep-2020 10:21:09 UTC] PHP  15. str_replace() /home/mieone/Downloads/wordpress/app/public/wp-content/mu-plugins/local-by-flywheel-live-link-helper.php:154
+[24-Sep-2020 10:22:05 UTC] PHP Catchable fatal error:  Object of class stdClass could not be converted to string in /home/mieone/Downloads/wordpress/app/public/wp-content/mu-plugins/local-by-flywheel-live-link-helper.php on line 155
+[24-Sep-2020 10:22:05 UTC] PHP Stack trace:
+[24-Sep-2020 10:22:05 UTC] PHP   1. {main}() /home/mieone/Downloads/wordpress/app/public/wp-admin/plugins.php:0
+[24-Sep-2020 10:22:05 UTC] PHP   2. require_once() /home/mieone/Downloads/wordpress/app/public/wp-admin/plugins.php:10
+[24-Sep-2020 10:22:05 UTC] PHP   3. do_action() /home/mieone/Downloads/wordpress/app/public/wp-admin/admin.php:374
+[24-Sep-2020 10:22:05 UTC] PHP   4. WP_Hook->do_action() /home/mieone/Downloads/wordpress/app/public/wp-includes/plugin.php:478
+[24-Sep-2020 10:22:05 UTC] PHP   5. WP_Hook->apply_filters() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-hook.php:311
+[24-Sep-2020 10:22:05 UTC] PHP   6. wp_update_plugins() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-hook.php:287
+[24-Sep-2020 10:22:05 UTC] PHP   7. set_site_transient() /home/mieone/Downloads/wordpress/app/public/wp-includes/update.php:347
+[24-Sep-2020 10:22:05 UTC] PHP   8. update_site_option() /home/mieone/Downloads/wordpress/app/public/wp-includes/option.php:1962
+[24-Sep-2020 10:22:05 UTC] PHP   9. update_network_option() /home/mieone/Downloads/wordpress/app/public/wp-includes/option.php:1294
+[24-Sep-2020 10:22:05 UTC] PHP  10. update_option() /home/mieone/Downloads/wordpress/app/public/wp-includes/option.php:1724
+[24-Sep-2020 10:22:05 UTC] PHP  11. apply_filters() /home/mieone/Downloads/wordpress/app/public/wp-includes/option.php:394
+[24-Sep-2020 10:22:05 UTC] PHP  12. WP_Hook->apply_filters() /home/mieone/Downloads/wordpress/app/public/wp-includes/plugin.php:206
+[24-Sep-2020 10:22:05 UTC] PHP  13. LocalWP_Live_Link_Helper->make_link_local() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-hook.php:289
+[24-Sep-2020 10:22:05 UTC] PHP  14. LocalWP_Live_Link_Helper->replace_host() /home/mieone/Downloads/wordpress/app/public/wp-content/mu-plugins/local-by-flywheel-live-link-helper.php:186
+[24-Sep-2020 10:22:05 UTC] PHP  15. str_replace() /home/mieone/Downloads/wordpress/app/public/wp-content/mu-plugins/local-by-flywheel-live-link-helper.php:155
+[24-Sep-2020 10:23:38 UTC] PHP Catchable fatal error:  Object of class stdClass could not be converted to string in /home/mieone/Downloads/wordpress/app/public/wp-content/mu-plugins/local-by-flywheel-live-link-helper.php on line 154
+[24-Sep-2020 10:23:38 UTC] PHP Stack trace:
+[24-Sep-2020 10:23:38 UTC] PHP   1. {main}() /home/mieone/Downloads/wordpress/app/public/wp-admin/plugins.php:0
+[24-Sep-2020 10:23:38 UTC] PHP   2. require_once() /home/mieone/Downloads/wordpress/app/public/wp-admin/plugins.php:10
+[24-Sep-2020 10:23:38 UTC] PHP   3. do_action() /home/mieone/Downloads/wordpress/app/public/wp-admin/admin.php:374
+[24-Sep-2020 10:23:38 UTC] PHP   4. WP_Hook->do_action() /home/mieone/Downloads/wordpress/app/public/wp-includes/plugin.php:478
+[24-Sep-2020 10:23:38 UTC] PHP   5. WP_Hook->apply_filters() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-hook.php:311
+[24-Sep-2020 10:23:38 UTC] PHP   6. wp_update_plugins() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-hook.php:287
+[24-Sep-2020 10:23:38 UTC] PHP   7. set_site_transient() /home/mieone/Downloads/wordpress/app/public/wp-includes/update.php:347
+[24-Sep-2020 10:23:38 UTC] PHP   8. update_site_option() /home/mieone/Downloads/wordpress/app/public/wp-includes/option.php:1962
+[24-Sep-2020 10:23:38 UTC] PHP   9. update_network_option() /home/mieone/Downloads/wordpress/app/public/wp-includes/option.php:1294
+[24-Sep-2020 10:23:38 UTC] PHP  10. update_option() /home/mieone/Downloads/wordpress/app/public/wp-includes/option.php:1724
+[24-Sep-2020 10:23:38 UTC] PHP  11. apply_filters() /home/mieone/Downloads/wordpress/app/public/wp-includes/option.php:394
+[24-Sep-2020 10:23:38 UTC] PHP  12. WP_Hook->apply_filters() /home/mieone/Downloads/wordpress/app/public/wp-includes/plugin.php:206
+[24-Sep-2020 10:23:38 UTC] PHP  13. LocalWP_Live_Link_Helper->make_link_local() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-hook.php:289
+[24-Sep-2020 10:23:38 UTC] PHP  14. LocalWP_Live_Link_Helper->replace_host() /home/mieone/Downloads/wordpress/app/public/wp-content/mu-plugins/local-by-flywheel-live-link-helper.php:186
+[24-Sep-2020 10:23:38 UTC] PHP  15. str_replace() /home/mieone/Downloads/wordpress/app/public/wp-content/mu-plugins/local-by-flywheel-live-link-helper.php:154
+[24-Sep-2020 10:24:00 UTC] PHP Catchable fatal error:  Object of class stdClass could not be converted to string in /home/mieone/Downloads/wordpress/app/public/wp-content/mu-plugins/local-by-flywheel-live-link-helper.php on line 154
+[24-Sep-2020 10:24:00 UTC] PHP Stack trace:
+[24-Sep-2020 10:24:00 UTC] PHP   1. {main}() /home/mieone/Downloads/wordpress/app/public/wp-admin/plugins.php:0
+[24-Sep-2020 10:24:00 UTC] PHP   2. require_once() /home/mieone/Downloads/wordpress/app/public/wp-admin/plugins.php:10
+[24-Sep-2020 10:24:00 UTC] PHP   3. do_action() /home/mieone/Downloads/wordpress/app/public/wp-admin/admin.php:374
+[24-Sep-2020 10:24:00 UTC] PHP   4. WP_Hook->do_action() /home/mieone/Downloads/wordpress/app/public/wp-includes/plugin.php:478
+[24-Sep-2020 10:24:00 UTC] PHP   5. WP_Hook->apply_filters() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-hook.php:311
+[24-Sep-2020 10:24:00 UTC] PHP   6. wp_update_plugins() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-hook.php:287
+[24-Sep-2020 10:24:00 UTC] PHP   7. set_site_transient() /home/mieone/Downloads/wordpress/app/public/wp-includes/update.php:347
+[24-Sep-2020 10:24:00 UTC] PHP   8. update_site_option() /home/mieone/Downloads/wordpress/app/public/wp-includes/option.php:1962
+[24-Sep-2020 10:24:00 UTC] PHP   9. update_network_option() /home/mieone/Downloads/wordpress/app/public/wp-includes/option.php:1294
+[24-Sep-2020 10:24:00 UTC] PHP  10. update_option() /home/mieone/Downloads/wordpress/app/public/wp-includes/option.php:1724
+[24-Sep-2020 10:24:00 UTC] PHP  11. apply_filters() /home/mieone/Downloads/wordpress/app/public/wp-includes/option.php:394
+[24-Sep-2020 10:24:00 UTC] PHP  12. WP_Hook->apply_filters() /home/mieone/Downloads/wordpress/app/public/wp-includes/plugin.php:206
+[24-Sep-2020 10:24:00 UTC] PHP  13. LocalWP_Live_Link_Helper->make_link_local() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-hook.php:289
+[24-Sep-2020 10:24:00 UTC] PHP  14. LocalWP_Live_Link_Helper->replace_host() /home/mieone/Downloads/wordpress/app/public/wp-content/mu-plugins/local-by-flywheel-live-link-helper.php:186
+[24-Sep-2020 10:24:00 UTC] PHP  15. str_replace() /home/mieone/Downloads/wordpress/app/public/wp-content/mu-plugins/local-by-flywheel-live-link-helper.php:154
+[24-Sep-2020 10:27:26 UTC] PHP Warning:  Attempt to assign property 'post_content' of non-object in /home/mieone/Downloads/wordpress/app/public/wp-content/mu-plugins/local-by-flywheel-live-link-helper.php on line 195
+[24-Sep-2020 10:27:26 UTC] PHP Stack trace:
+[24-Sep-2020 10:27:26 UTC] PHP   1. {main}() /home/mieone/Downloads/wordpress/app/public/wp-admin/post-new.php:0
+[24-Sep-2020 10:27:26 UTC] PHP   2. get_default_post_to_edit() /home/mieone/Downloads/wordpress/app/public/wp-admin/post-new.php:66
+[24-Sep-2020 10:27:26 UTC] PHP   3. wp_insert_post() /home/mieone/Downloads/wordpress/app/public/wp-admin/includes/post.php:687
+[24-Sep-2020 10:27:26 UTC] PHP   4. apply_filters() /home/mieone/Downloads/wordpress/app/public/wp-includes/post.php:3971
+[24-Sep-2020 10:27:26 UTC] PHP   5. WP_Hook->apply_filters() /home/mieone/Downloads/wordpress/app/public/wp-includes/plugin.php:206
+[24-Sep-2020 10:27:26 UTC] PHP   6. LocalWP_Live_Link_Helper->make_link_local_in_posts() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-hook.php:289
+[24-Sep-2020 10:28:48 UTC] PHP Catchable fatal error:  Object of class stdClass could not be converted to string in /home/mieone/Downloads/wordpress/app/public/wp-content/mu-plugins/local-by-flywheel-live-link-helper.php on line 154
+[24-Sep-2020 10:28:48 UTC] PHP Stack trace:
+[24-Sep-2020 10:28:48 UTC] PHP   1. {main}() /home/mieone/Downloads/wordpress/app/public/wp-admin/plugins.php:0
+[24-Sep-2020 10:28:48 UTC] PHP   2. require_once() /home/mieone/Downloads/wordpress/app/public/wp-admin/plugins.php:10
+[24-Sep-2020 10:28:48 UTC] PHP   3. do_action() /home/mieone/Downloads/wordpress/app/public/wp-admin/admin.php:374
+[24-Sep-2020 10:28:48 UTC] PHP   4. WP_Hook->do_action() /home/mieone/Downloads/wordpress/app/public/wp-includes/plugin.php:478
+[24-Sep-2020 10:28:48 UTC] PHP   5. WP_Hook->apply_filters() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-hook.php:311
+[24-Sep-2020 10:28:48 UTC] PHP   6. wp_update_plugins() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-hook.php:287
+[24-Sep-2020 10:28:48 UTC] PHP   7. set_site_transient() /home/mieone/Downloads/wordpress/app/public/wp-includes/update.php:347
+[24-Sep-2020 10:28:48 UTC] PHP   8. update_site_option() /home/mieone/Downloads/wordpress/app/public/wp-includes/option.php:1962
+[24-Sep-2020 10:28:48 UTC] PHP   9. update_network_option() /home/mieone/Downloads/wordpress/app/public/wp-includes/option.php:1294
+[24-Sep-2020 10:28:48 UTC] PHP  10. update_option() /home/mieone/Downloads/wordpress/app/public/wp-includes/option.php:1724
+[24-Sep-2020 10:28:48 UTC] PHP  11. apply_filters() /home/mieone/Downloads/wordpress/app/public/wp-includes/option.php:394
+[24-Sep-2020 10:28:48 UTC] PHP  12. WP_Hook->apply_filters() /home/mieone/Downloads/wordpress/app/public/wp-includes/plugin.php:206
+[24-Sep-2020 10:28:48 UTC] PHP  13. LocalWP_Live_Link_Helper->make_link_local() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-hook.php:289
+[24-Sep-2020 10:28:48 UTC] PHP  14. LocalWP_Live_Link_Helper->replace_host() /home/mieone/Downloads/wordpress/app/public/wp-content/mu-plugins/local-by-flywheel-live-link-helper.php:186
+[24-Sep-2020 10:28:48 UTC] PHP  15. str_replace() /home/mieone/Downloads/wordpress/app/public/wp-content/mu-plugins/local-by-flywheel-live-link-helper.php:154
+[24-Sep-2020 10:29:57 UTC] PHP Catchable fatal error:  Object of class stdClass could not be converted to string in /home/mieone/Downloads/wordpress/app/public/wp-content/mu-plugins/local-by-flywheel-live-link-helper.php on line 154
+[24-Sep-2020 10:29:57 UTC] PHP Stack trace:
+[24-Sep-2020 10:29:57 UTC] PHP   1. {main}() /home/mieone/Downloads/wordpress/app/public/wp-admin/plugins.php:0
+[24-Sep-2020 10:29:57 UTC] PHP   2. require_once() /home/mieone/Downloads/wordpress/app/public/wp-admin/plugins.php:10
+[24-Sep-2020 10:29:57 UTC] PHP   3. do_action() /home/mieone/Downloads/wordpress/app/public/wp-admin/admin.php:374
+[24-Sep-2020 10:29:57 UTC] PHP   4. WP_Hook->do_action() /home/mieone/Downloads/wordpress/app/public/wp-includes/plugin.php:478
+[24-Sep-2020 10:29:57 UTC] PHP   5. WP_Hook->apply_filters() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-hook.php:311
+[24-Sep-2020 10:29:57 UTC] PHP   6. wp_update_plugins() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-hook.php:287
+[24-Sep-2020 10:29:57 UTC] PHP   7. set_site_transient() /home/mieone/Downloads/wordpress/app/public/wp-includes/update.php:347
+[24-Sep-2020 10:29:57 UTC] PHP   8. update_site_option() /home/mieone/Downloads/wordpress/app/public/wp-includes/option.php:1962
+[24-Sep-2020 10:29:57 UTC] PHP   9. update_network_option() /home/mieone/Downloads/wordpress/app/public/wp-includes/option.php:1294
+[24-Sep-2020 10:29:57 UTC] PHP  10. update_option() /home/mieone/Downloads/wordpress/app/public/wp-includes/option.php:1724
+[24-Sep-2020 10:29:57 UTC] PHP  11. apply_filters() /home/mieone/Downloads/wordpress/app/public/wp-includes/option.php:394
+[24-Sep-2020 10:29:57 UTC] PHP  12. WP_Hook->apply_filters() /home/mieone/Downloads/wordpress/app/public/wp-includes/plugin.php:206
+[24-Sep-2020 10:29:57 UTC] PHP  13. LocalWP_Live_Link_Helper->make_link_local() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-hook.php:289
+[24-Sep-2020 10:29:57 UTC] PHP  14. LocalWP_Live_Link_Helper->replace_host() /home/mieone/Downloads/wordpress/app/public/wp-content/mu-plugins/local-by-flywheel-live-link-helper.php:186
+[24-Sep-2020 10:29:57 UTC] PHP  15. str_replace() /home/mieone/Downloads/wordpress/app/public/wp-content/mu-plugins/local-by-flywheel-live-link-helper.php:154
+[24-Sep-2020 10:30:02 UTC] PHP Catchable fatal error:  Object of class stdClass could not be converted to string in /home/mieone/Downloads/wordpress/app/public/wp-content/mu-plugins/local-by-flywheel-live-link-helper.php on line 154
+[24-Sep-2020 10:30:02 UTC] PHP Stack trace:
+[24-Sep-2020 10:30:02 UTC] PHP   1. {main}() /home/mieone/Downloads/wordpress/app/public/wp-admin/plugins.php:0
+[24-Sep-2020 10:30:02 UTC] PHP   2. require_once() /home/mieone/Downloads/wordpress/app/public/wp-admin/plugins.php:10
+[24-Sep-2020 10:30:02 UTC] PHP   3. do_action() /home/mieone/Downloads/wordpress/app/public/wp-admin/admin.php:374
+[24-Sep-2020 10:30:02 UTC] PHP   4. WP_Hook->do_action() /home/mieone/Downloads/wordpress/app/public/wp-includes/plugin.php:478
+[24-Sep-2020 10:30:02 UTC] PHP   5. WP_Hook->apply_filters() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-hook.php:311
+[24-Sep-2020 10:30:02 UTC] PHP   6. wp_update_plugins() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-hook.php:287
+[24-Sep-2020 10:30:02 UTC] PHP   7. set_site_transient() /home/mieone/Downloads/wordpress/app/public/wp-includes/update.php:347
+[24-Sep-2020 10:30:02 UTC] PHP   8. update_site_option() /home/mieone/Downloads/wordpress/app/public/wp-includes/option.php:1962
+[24-Sep-2020 10:30:02 UTC] PHP   9. update_network_option() /home/mieone/Downloads/wordpress/app/public/wp-includes/option.php:1294
+[24-Sep-2020 10:30:02 UTC] PHP  10. update_option() /home/mieone/Downloads/wordpress/app/public/wp-includes/option.php:1724
+[24-Sep-2020 10:30:02 UTC] PHP  11. apply_filters() /home/mieone/Downloads/wordpress/app/public/wp-includes/option.php:394
+[24-Sep-2020 10:30:02 UTC] PHP  12. WP_Hook->apply_filters() /home/mieone/Downloads/wordpress/app/public/wp-includes/plugin.php:206
+[24-Sep-2020 10:30:02 UTC] PHP  13. LocalWP_Live_Link_Helper->make_link_local() /home/mieone/Downloads/wordpress/app/public/wp-includes/class-wp-hook.php:289
+[24-Sep-2020 10:30:02 UTC] PHP  14. LocalWP_Live_Link_Helper->replace_host() /home/mieone/Downloads/wordpress/app/public/wp-content/mu-plugins/local-by-flywheel-live-link-helper.php:186
+[24-Sep-2020 10:30:02 UTC] PHP  15. str_replace() /home/mieone/Downloads/wordpress/app/public/wp-content/mu-plugins/local-by-flywheel-live-link-helper.php:154
